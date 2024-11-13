@@ -1,0 +1,143 @@
+body{
+    background-color: #16423C;
+}
+header{
+    background-color: #6A9C89;
+    position: relative;
+    height: 100px;
+}
+h1{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+nav{
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+
+section{
+    background-color: #6A9C89;
+    max-width: 90%;
+    margin: 0 auto;
+
+}
+.contenedorPadre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 500px; */
+    /* flex-direction: row-reverse; */
+
+}
+
+.contenedorPadre div{
+    background-color: #E9EFEC;
+    width: 200px;
+    border: 5px solid pink;
+    border-radius: 40px;
+    text-align: center;
+    margin: 15px;
+    /* margin: 0 auto; */
+}
+/* .cardUno{
+    align-self: start;
+
+}
+.cardCuatro{
+    align-self: end;
+} */
+.contenedorPadre div img{
+    max-width: 70%;
+    border: 5px solid;
+    margin: 20px;
+    /* margin-top: 50px;
+    margin-right: 80px;
+    margin-bottom: 25px;
+    margin-left: 30px; */
+    /* margin: 50px 80px 25px 30px; */
+    /* padding: 10px; */
+    /* padding: 5px 10px 15px 20px; */
+}
+
+.grillas{
+    height: 400px;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+.uno{
+    background-color: orange;
+    grid-area: 1 / 1 / 4 / 5 ;
+}
+.dos{
+    background-color: black;
+    grid-area: 1 / 5 / 4 / 5 ;
+    color: white
+}
+.tres{
+    background-color: orangered;
+    grid-area: 4 / 1 / 6 / 4;
+}
+.cuatro{
+    background-color: red;
+    grid-area: 4 / 4 / 6 / 6;
+}
+.cuatro img{
+    width: 100%;
+    height: 100%;
+}
+.parent {
+    height: 300px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    }
+    
+    .div1 { 
+        background-color: pink;
+        grid-area: 1 / 1 / 7 / 4; 
+    }
+    .div2 { 
+        background-color: green;
+        grid-area: 1 / 4 / 3 / 6; 
+    }
+    .div3 { 
+        background-color: purple;
+        grid-area: 3 / 4 / 5 / 6; 
+    }
+    .div4 {
+        background-color: brown;
+        grid-area: 5 / 4 / 7 / 6; 
+    }
+
+footer{
+    background-color: #6A9C89;
+}
+
+/* 
+Sintaxis de mediaqueries */
+@media(max-width:800px){
+    /* //las propiedad que vamos a modificar.  */
+    .contenedorPadre{
+        display: block;
+    }
+    .contenedorPadre div{
+        background-color: #16423C;
+
+    }
+    .div1 { grid-area: 1 / 1 / 3 / 6; }
+    .div2 { grid-area: 3 / 1 / 5 / 4; }
+    .div3 { grid-area: 3 / 4 / 7 / 6; }
+    .div4 { grid-area: 5 / 1 / 7 / 4; }
+}
+@media(min-width: 950px){
+    .contenedorPadre div{
+        background-color: red;
+    }
+}
